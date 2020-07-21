@@ -1,0 +1,157 @@
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Site</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" >
+    <link rel="stylesheet" href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+</head>
+<body>
+    <!--NavigationBar-->
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href=""><img src="images/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ml-auto">
+                <a class="nav-link active" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About</a>
+                <a class="nav-link" href="#">Classes</a>
+                <a class="nav-link" href="contact1.html">Contact</a>
+                <input type="submit" value="SignUp">
+              </div>
+            </div>
+          </nav>
+    </section><br>
+    <!--Our Classes-->
+        <section id="classes"> OUR <strong><em>CLASSES</em></strong> <br><img src="images/line-dec.png" alt><br>
+        <p>Nunc urna sem, laoreet ut metus id, aliquet consequat magna. Sed viverra ipsum dolor, ultricies fermentum massa consequat eu.</p>
+    </section><br>
+    <section>
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'First Training Class')" id="defaultOpen"><img style="float: left; margin: 0px 15px 15px 0px;" src="images/dumbell.PNG" width="100"/>First Training Class</button>
+        <button class="tablinks" onclick="openCity(event, 'Second Training Class')"><img style="float: left; margin: 0px 15px 15px 0px;" src="images/dumbell.PNG" width="100"/>Second Training Class</button>
+        <button class="tablinks" onclick="openCity(event, 'Third Training Class')"><img style="float: left; margin: 0px 15px 15px 0px;" src="images/dumbell.PNG" width="100"/>Third Training Class</button>
+        <button class="tablinks" onclick="openCity(event, 'Fourth Training Class')"><img style="float: left; margin: 0px 15px 15px 0px;" src="images/dumbell.PNG" width="100"/>Fourth Training Class</button>
+      </div>
+      
+      <div id="First Training Class" class="tabcontent">
+        <img src="images/training-image-01.jpg">
+        <h3>First Training Class</h3>
+        <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
+      </div>
+      
+      <div id="Second Training Class" class="tabcontent">
+        <img src="images/training-image-02.jpg">
+        <h3>Second Training Class</h3>
+        <p>Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p> 
+      </div>
+      
+      <div id="Third Training Class" class="tabcontent">
+        <img src="images/training-image-03.jpg">
+        <h3>Third Training Class</h3>
+        <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque.</p>
+      </div>
+
+      <div id="Fourth Training Class" class="tabcontent">
+        <img src="images/training-image-04.jpg">
+        <h3>Fourth Training Class</h3>
+        <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque.</p>
+      </div>
+      </section>
+      <br>
+
+      
+        <div class="colum">
+            <section class="tabs-content">
+                <article id="tabs-1" aria-labelledby="ui-1" class="ui-tabs" role="tabpanel" aria-hidden="false" style="display: block;">
+                    <!-- <img src="images/img2.jpg" alt="First Class" width="200px" height="200px"> -->
+                    
+                    
+                </article>
+            </section>
+        </div>
+
+        <script>
+          function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+          }
+          
+          // Get the element with id="defaultOpen" and click on it
+          document.getElementById("defaultOpen").click();
+          </script>
+    </section>
+    <!--Footer-->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h1 class="logo-text"><span>Basic</span></h1>
+          <p>A simple programming language developed in the 1960s that is widely taught to students as a first programming language.
+          </p>
+          <div class="contact">
+            <span><img src='images/phone.png' style="height: 32px; width: 32px;"></i>&nbsp; 123-456-789</span><br>
+            <span><img src='images/message.png' style="height: 32px; width: 32px;"></i>&nbsp; info@basic.com</span>
+          </div>
+          <div class="socials">
+            <a href="http://www.facebook.com"><img src='images/facebook.png' style="height: 32px; width: 32px;"></i></a>
+            <a href="http://www.instagram.com"><img src='images/instagram.png' style="height: 32px; width: 32px;"></i></a>
+            <a href="http://www.twitter.com"><img src='images/twitter.png' style="height: 32px; width: 32px;"></i></a>
+            <a href="http://www.youtube.com"><img src='images/youtube.png' style="height: 32px; width: 32px;"></i></a>
+          </div>
+
+        </div>
+        <div class="footer-section links">
+          <h2>Quick Links</h2>
+          <br>
+          <ul>
+            <a href="#">
+              <li>Events</li>
+            </a>
+            <a href="#">
+              <li>Team</li>
+            </a>
+            <a href="#">
+              <li>Gallery</li>
+            </a>
+            <a href="#">
+              <li>Policies</li>
+            </a>
+            <a href="#">
+              <li>Terms and Conditions</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-section contact-form">
+          <h2> Contct Us</h2>
+          <br>
+          <form action="index.html" method="POST">
+            <input type="email" name="email" class="text-input contact-input" placeholder="Your email address..."><br>
+            <textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea><br>
+            <button type="submit" class="btn btn-big contact-btn">
+              <i class="fa fa-envelope"></i>
+              Send</button>
+
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; Basic.com | Designed by Basic
+      </div>
+    </div>
+    
+</body>
+</html>
